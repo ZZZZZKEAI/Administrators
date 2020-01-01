@@ -1,0 +1,28 @@
+
+.addlist{
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+.addlist1{
+    display: flex;
+    padding-left: 10px;
+    float: left;
+}
+.addlist3{
+    height: 30px;
+
+}
+.addlist2{
+    /* position: relative;
+    bottom: 355px; */
+    /* left: 168px; */
+}
+.add{
+    overflow: hidden;
+    width: 80px;
+    height: 22px;
+
+    /* position: relative;
+    bottom: 355px;
+    left: 168px; */
+}

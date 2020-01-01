@@ -1,0 +1,50 @@
+.menu{
+    overflow: hidden;
+    background: url("/img/4.png");
+    background-size: 1699px 910px;
+    width: 100%;
+    height: 911px;
+}
+.addlist{
+    color:white;
+    min-height: 500px;
+    width: 1499px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    margin-top: 110px;
+    border-radius:15px;
+    border: 1px solid rgba(245, 245, 245, 0.699);
+}
+.button{
+    display: flex;
+    height: 50px;
+    width: 1499px;
+    /* background-color:rgb(47, 64, 150); */
+    position: relative;
+    left: 17px;
+    padding-left: 5px;
+    padding-top: 9px;
+}
+.button>a{
+    margin-right: 15px;
+}
+.button>span{
+    width: 500px;
+}
+.add{ 
+    width: 1480px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    opacity:0.9;
+}
+
+.B{
+    background-color: rgb(36, 83, 170);
+    color: white;
+    width: 85px;
+    height: 32px;
+}
+.yuedu{
+    display: inline-block;
+    margin-bottom: 15px;
+}

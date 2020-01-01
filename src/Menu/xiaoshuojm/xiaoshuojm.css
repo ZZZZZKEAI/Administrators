@@ -1,0 +1,139 @@
+.tu1{
+    background: url("/img/4.jpg") no-repeat;
+    width: 1899;
+    height: 911px;
+    background-size: 100% 100%;
+
+}
+.kuang{
+    width: 1000px;
+    /* height: 120px; */
+    min-height: 750px;
+    margin: 0 auto;
+    padding: 5px;
+    /* padding-top: 130px; */
+    margin-top: -865px;
+    border: 2px solid rgba(0,0,0,.1);
+    border-bottom: none;
+    background-color: rgb(255, 255, 255);
+    z-index: 45;
+}
+.kuang::after{
+    clear:both;
+    display: block;
+    content: " ";
+}
+
+.tk::after{
+    clear:both;
+    display: block;
+    content: " ";
+}
+.tk>div:nth-child(1){
+    float: left;
+}
+.tk>div:nth-child(1)>img{
+    width: 266px;
+    height: 380.8px;
+    margin: 20px;
+    margin-bottom: 0px; 
+}
+.tk1{
+    float: right;
+    margin-top: 20px;
+    width: 680px;
+    height: 400px;
+}
+.tk1::after{
+    clear:both;
+    display: block;
+    content: " ";
+}
+.tk1>h1{
+    font-size: 50px;
+    font-style: normal;
+}
+.tk1>h1>em{
+    font-style: normal;
+}
+.tk1>h1>span{
+    margin-left: 20px;
+    font: 14px/20px '-apple-system';
+}
+.tk1>h1>span:nth-child(3){
+    margin-left: 5px;
+}
+.tk1>p:nth-child(2){
+    height: 25px;
+    margin-bottom: 12px;
+}
+.tk1>p:nth-child(3){
+    overflow: hidden;
+    color: #000;
+    font-size: 20px;
+    word-break:break-all;
+    width: 500px;
+}
+.tk1>p:nth-child(2) span{
+    border-color: #9fadc9;
+    display: inline-block;
+    margin-right: 12px;
+    padding: 0 10px;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 15px;
+}
+.tk2{
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
+}
+.tk2>p:nth-child(1)>em{
+    font: 20px/22px Arial;
+    color: #000;
+}
+.tk2>p:nth-child(1)>i{
+    font: 20px/22px Arial;
+    margin: 0 10px;
+    color: #e6e6e6;
+}
+.tk2>p:nth-child(3){
+    margin: 0px;
+}
+.tk2>p:nth-child(3) button{
+    width: 123px;
+}
+.tk2>p:nth-child(3)>a>button{
+    margin-right: 20px;
+}
+.tk2>a>button{
+    margin-bottom: 15px;
+    width: 266px;
+}
+.mulu{
+    width: 990px;
+    margin-top: 50px;
+}
+.mulu>div:nth-child(1){
+    width: 100%;
+    border-bottom:  1px solid
+}
+.mulu>ul:nth-child(2)::after{
+    clear:both;
+    display: block;
+    content: " ";
+}
+.mulu>ul:nth-child(2){
+    padding: 0px;
+}
+.mulu>ul:nth-child(2) li{
+    font: 14px/40px'-apple-system';
+    float: left;
+    overflow: hidden;
+    
+    width: 330px;
+    height: 40px;
+    padding-right: 60px;
+    border-bottom: 1px solid #ebebeb;
+}

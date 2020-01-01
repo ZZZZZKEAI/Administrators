@@ -1,0 +1,21 @@
+.menu{
+    /* display: flex; */
+    width: 1899px;
+    height: 800px;
+}
+.menu>div{
+    float: left;
+}
+.menu1{
+    float: left;
+    width: 1699px;
+}
+.liebiao{
+    width: 200px;
+    height: 40px;
+    margin: 4px 0px 8px 0px;
+    padding: 0px 16px 0px 48px;
+    line-height: 40px;
+    cursor:pointer;
+}
+

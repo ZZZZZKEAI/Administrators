@@ -1,0 +1,59 @@
+.login{
+    background:url("/img/4.png");
+    height: 910px;
+    opacity:0.8;
+    }
+    
+    .login1{
+        background-color:white;
+        display: flex;
+        width: 400px;
+        height: 500px;
+        position: relative;
+        left: 770px;
+        top: 100px;
+        z-index: 2;
+    }
+    .username{
+      
+        width: 300px;
+        height: 50px;
+        position: relative;
+        left: 43px;
+        top: 100px;
+    }
+    .account{
+        background-color: white;
+        width: 300px;
+        height: 50px;
+        padding-left: 10px;
+    }
+    .password{
+        background-color: black;
+        width: 300px;
+        height: 50px;
+        position: relative;
+        right:267px;
+        top: 200px;
+    }
+    .word{
+        background-color: white;
+        width: 310px;
+        height: 50px;
+        padding-left: 10px;
+    }
+    .button{
+      
+        width: 330px;
+        height: 50px;
+        position: relative;
+        right: 557px;
+        top: 300px;
+    }
+    .b{
+       color: gray;
+        background-color: white;
+        width: 301px;
+        height: 50px;
+       
+    }

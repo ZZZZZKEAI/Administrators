@@ -1,0 +1,14 @@
+.header{
+    height:3em;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    font-size: 2em;
+    z-index: 4;
+}
+.header a{
+    position: relative;
+    left: 15px;
+    color:white;
+    text-decoration: none;
+}

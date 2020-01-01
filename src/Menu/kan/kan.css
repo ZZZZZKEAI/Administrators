@@ -1,0 +1,73 @@
+.lb{
+    width: 60px;
+    height: 180px;
+    background-color: antiquewhite;
+    position: fixed;
+    z-index: 5;
+    top: 1px;
+    left: 480px;
+}
+.lb1{
+    width: 60px;
+    height: 60px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    cursor:pointer;
+}
+.lb1>i{
+    margin: 6px 18px;
+}
+.lb1>div{
+    margin: 0 auto;
+    text-align:center;
+}
+.beijing{
+    background: url("/img/1.jpg")no-repeat;
+    background-size: 100% 100%;
+    width: 1899px;
+    height: 969px;
+    position: fixed;
+    opacity:0.7;
+    top: 0px;
+}
+.zwk{
+    width: 800px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    border: 1px solid #d8d8d8;
+    opacity:1;
+    position:relative;
+    z-index: 5;
+}
+.zw{
+    width: 800px;
+    padding: 60px 64px;
+}
+.zj>h3{
+    font: 24px/32px'Helvetica Neue Light';
+    height: 32px;
+    margin-bottom: 12px;
+}
+.zw1{
+    line-height: 1.8;
+    font-size: 20px;
+}
+.dibu{
+    margin-top: 20px;
+    width: 800px;
+    height: 72px;
+    text-align: center;
+    border-top: 1px solid #d8d8d8;
+}
+.dibu a{
+    display: inline-block;
+    font: 18px/70px'Helvetica Neue Light';
+    width: 32.9%;
+}
+.dibu span{
+    display: inline-block;
+    height: 32px;
+    width: 1px;
+    font-size: 15px;
+    background-color: #d8d8d8;
+    margin-bottom: -11px;
+}
