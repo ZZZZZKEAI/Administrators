@@ -187,11 +187,11 @@ export default class Tuijianlist9 extends React.Component {
     const { count, dataSource } = this.state;
     const newData = {
       key: count,
-      name: `小说 ${count}`,
+      name: `旅行攻略 ${count}`,
       zz: 'xxx',
-      fl: 'xx',
+      place: 'xx',
       poster: '<img src=""></img>',
-      address: `小说简介 ${count}`,
+      address: `简介 ${count}`,
     };
     this.setState({
       dataSource: [...dataSource, newData],
@@ -238,7 +238,7 @@ export default class Tuijianlist9 extends React.Component {
         <div className={TuijianlistCss.addlist}>
           <div className={TuijianlistCss.button}>
             <Button onClick={this.handleAdd} type="primary" style={{ marginBottom: 16 }}>
-              增加小说
+              增加旅行攻略
             </Button>
           </div>
           <div className={TuijianlistCss.add}>

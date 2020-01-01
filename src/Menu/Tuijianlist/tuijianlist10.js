@@ -1,9 +1,7 @@
 import React from 'react'
 import { Link, BrowserRouter, Route } from 'react-router-dom'
 import { Table, Input, Button, Popconfirm, Form } from 'antd';
-import Add from '../Add/add';
-var XiaoshuoCSS = require('./xiaoshuo.css')
-const { Search } = Input;
+var TuijianlistCss = require('./tuijianlist.css')
 const EditableContext = React.createContext();
 
 const EditableRow = ({ form, index, ...props }) => (
@@ -41,7 +39,7 @@ class EditableCell extends React.Component {
 
   renderCell = form => {
     this.form = form;
-    const { children, dataIndex, record, title, } = this.props;
+    const { children, dataIndex, record, title } = this.props;
     const { editing } = this.state;
     return editing ? (
       <Form.Item style={{ margin: 0 }}>
@@ -49,7 +47,7 @@ class EditableCell extends React.Component {
           rules: [
             {
               required: true,
-              message: `${title} 不能为空.`,
+              message: `${title} is required.`,
             },
           ],
           initialValue: record[dataIndex],
@@ -88,59 +86,55 @@ class EditableCell extends React.Component {
     );
   }
 }
-export default class Xiaoshuo extends React.Component {
+export default class Tuijianlist10 extends React.Component {
   constructor(props) {
     super(props);
     this.columns = [
       {
-        title: '用户昵称',
+        title: '用户',
         dataIndex: 'name',
         width: '10%',
         editable: true,
       },
       {
-        title: '下单时间',
-        dataIndex: 'time',
-        width: '10%',
+        title: '用户昵称',
+        dataIndex: 'nickname',
         editable: true,
+        width: '10%',
       },
       {
-        title: '所用费用',
-        dataIndex: 'price',
-        width: '10%',
+        title: '账号',
+        dataIndex: 'account',
         editable: true,
+        width: '10%',
       },
       {
-        title: '行程出发地',
-        dataIndex: 'origin',
-        width: '10%',
+        title: '用户头像',
+        dataIndex: 'photo',
         editable: true,
+        width: '30%',
       },
       {
-        title: '行程目的地',
-        dataIndex: 'destination',
-        width: '10%',
+        title: '用户购买记录',
+        dataIndex: 'records',
         editable: true,
-      },
-      {
-        title: '简介',
-        dataIndex: 'address',
-        width: '20%',
-        editable: true,
+        width: '35%',
       },
       {
         title: '功能',
         dataIndex: 'operation',
-        width: '5%',
+        width: '10%',
         render: (text, record) =>
           this.state.dataSource.length >= 1 ? (
             <div>
-              <Link className={XiaoshuoCSS.yuedu} to="/xiaoshuojm">购买</Link>
-              <Popconfirm title="确定删除?" onConfirm={() => this.handleDelete(record.key)}>
+              <Link className={TuijianlistCss.yuedu}></Link>
+              <Popconfirm title="确定增加?" onConfirm={() => this.handleDelete(record.key)}>
+              <a href="javascript:;">增加</a>
+            </Popconfirm>
+            <Popconfirm title="确定删除?" onConfirm={() => this.handleDelete(record.key)}>
               <a href="javascript:;">删除</a>
             </Popconfirm>
             </div>
-            
           ) : null,
       },
     ];
@@ -150,31 +144,37 @@ export default class Xiaoshuo extends React.Component {
         {
           key: '0',
           name: '张三',
-          time: '2019年12月30日',
-          price: '¥65',
-          origin: '武汉黄鹤楼',
-          destination: '黄鹤楼',
-          address: '【刷身份证入园】【官方直销】【提前一天】黄鹤楼成人票',
+          nickname: '小张',
+          account: '1314159123',
+          photo: <img src="/img/49.jpg" />,
+          records: '黄鹤楼门票，归元寺门票',
         },
         {
-          key: '0',
-          name: '',
-          time: '',
-          price: '',
-          origin: '',
-          destination: '',
-          address: '',
+          key: '1',
+          name: '李四',
+          nickname: '小李',
+          account: '555666777',
+          photo: <img src="/img/50.jpg" />,
+          records: '武汉市博物馆门票，湖北省门票',
         },
         {
-          key: '0',
+          key: '2',
           name: '',
-          time: '',
-          price: '',
-          origin: '',
-          destination: '',
-          address: '',
+          nickname: '',
+          account: '',
+          photo: <img src="" />,
+          records: '',
+        },
+        {
+          key: '3',
+          name: '',
+          nickname: '',
+          account: '',
+          photo: <img src="" />,
+          records: '',
         },
       ],
+      count: 3,
     };
   }
 
@@ -183,6 +183,21 @@ export default class Xiaoshuo extends React.Component {
     this.setState({ dataSource: dataSource.filter(item => item.key !== key) });
   };
 
+  handleAdd = () => {
+    const { count, dataSource } = this.state;
+    const newData = {
+      key: count,
+      name: `旅行攻略 ${count}`,
+      zz: 'xxx',
+      place: 'xx',
+      poster: '<img src=""></img>',
+      address: `简介 ${count}`,
+    };
+    this.setState({
+      dataSource: [...dataSource, newData],
+      count: count + 1,
+    });
+  };
 
   handleSave = row => {
     const newData = [...this.state.dataSource];
@@ -219,29 +234,21 @@ export default class Xiaoshuo extends React.Component {
       };
     });
     return (
-      <div className={XiaoshuoCSS.menu}>
-        
-        <div className={XiaoshuoCSS.addlist}>
-
-          <div className={XiaoshuoCSS.button}>
-            <Link to="/xiaoshuodetails">
-              <Button type="primary" style={{ marginBottom: 16 }}>
-                订单详情
+      <div className={TuijianlistCss.menu}>
+        <div className={TuijianlistCss.addlist}>
+          <div className={TuijianlistCss.button}>
+            <Button onClick={this.handleAdd} type="primary" style={{ marginBottom: 16 }}>
+              增加用户
             </Button>
-            </Link>
-            <Search placeholder="关键字" onSearch={value => console.log(value)} enterButton />
           </div>
-          <Add/>
-          <div className={XiaoshuoCSS.add}>
+          <div className={TuijianlistCss.add}>
             <Table
               components={components}
               rowClassName={() => 'editable-row'}
               bordered
               dataSource={dataSource}
               columns={columns} />
-
           </div></div>
-
       </div>
 
     )

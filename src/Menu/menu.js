@@ -13,6 +13,7 @@ import Tuijianlist6 from './Tuijianlist/tuijianlist6';
 import Tuijianlist7 from './Tuijianlist/tuijianlist7';
 import Tuijianlist8 from './Tuijianlist/tuijianlist8';
 import Tuijianlist9 from './Tuijianlist/tuijianlist9';
+import Tuijianlist10 from './Tuijianlist/tuijianlist10';
 
 var MenuCSS = require('./menu.css')
 let m = 5;
@@ -102,7 +103,6 @@ export default class MenuPage extends React.Component {
                   }
                 >
                   <Menu.Item key=""><Link to="/menu/tuijianlist10">注册用户</Link></Menu.Item>
-                  <Menu.Item key=""><Link to="/menu/tuijianlist1">地区维护</Link></Menu.Item>
                 </SubMenu>
 
 
@@ -131,6 +131,7 @@ export default class MenuPage extends React.Component {
           <Route path="/menu/tuijianlist7" component={Tuijianlist7}></Route>
           <Route path="/menu/tuijianlist8" component={Tuijianlist8}></Route>
           <Route path="/menu/tuijianlist9" component={Tuijianlist9}></Route>
+          <Route path="/menu/tuijianlist10" component={Tuijianlist10}></Route>
           <Route path="/menu/xiaoshuo" component={Xiaoshuo}></Route>
           <Route path="/menu" exact component={MenulistPage}></Route>
         </div>
