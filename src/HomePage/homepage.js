@@ -38,6 +38,12 @@ export default class HomePage extends React.Component {
           <div className={HomePageCSS.button}>
             <Button className={HomePageCSS.b} onClick={this.login}>登录</Button>
           </div>
+          <div className={HomePageCSS.button}>
+            <Button className={HomePageCSS.c} Link to='./Register' onClick={this.Register}>注册</Button>
+          </div>
+          <div className={HomePageCSS.button}>
+            <Button className={HomePageCSS.d} onClick={this.Register}>忘记密码</Button>
+          </div>
         </div>
 
       </div>

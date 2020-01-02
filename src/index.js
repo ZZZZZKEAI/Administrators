@@ -21,6 +21,7 @@ class IndexPage extends React.Component{
                    <Route path="/xiaoshuodetails" component={Noveldetails}></Route>
                    <Route path="/xiaoshuojm" component={Xiaoshuojm}></Route>
                    <Route path="/kan" component={Kan}></Route>
+                   <Route path="/Register" component={Kan}></Route>
                    <Redirect to="/homepage"></Redirect>
                </Switch>
                </BrowserRouter>
